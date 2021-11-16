@@ -14,7 +14,7 @@ const STUDENT_DATA: any[] = [
   { id: 3, name: 'Anmol', email: 'anmol@example.com', age: 17 },
 ];
 
-const ListItem = ({ data }) => {
+const ListItem = ({ data }: { data: STDDATA }) => {
   return (
     <View style={styles.card}>
       <Text style={styles.heading1}>{ data.name }</Text>
@@ -25,7 +25,7 @@ const ListItem = ({ data }) => {
 }
 
 const ListView = () => {
-  const render = ({ item }) => <ListItem data={item} />
+  const render = ({ item }: { item: STDDATA }) => <ListItem data={item} />
 
   return (
     <View>

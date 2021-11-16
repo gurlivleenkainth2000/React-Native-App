@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import ListView from './src/List';
 
 const STACK = createNativeStackNavigator();
-const HomeScreen = ({ navigation }) => (
+const HomeScreen = ({ navigation }: { navigation: any }) => (
   <View>
     <Text>Home Screen</Text>
     <Button title="Student List" onPress={() => navigation.navigate("list")} />
