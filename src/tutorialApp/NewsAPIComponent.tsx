@@ -33,7 +33,7 @@ const NewsAPIComponent = () => {
       console.error(error);    
       setLoaderBool(false);
     }
-  }
+  } 
 
   const renderItem = ({ item }: { item: NewsAPI }) => (
     <View>
