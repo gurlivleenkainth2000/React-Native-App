@@ -22,10 +22,10 @@ const ProfileScreen = () => (
   </View>
 );
 
-export default function tApp() {
+export default function TApp() {
   return (
     <NavigationContainer>
-      <DRAWER.Navigator initialRouteName="news">
+      <DRAWER.Navigator initialRouteName="home">
         <DRAWER.Screen name="home" component={HomeScreen} options={{
           title: 'Home',
           drawerIcon: (props) => (
